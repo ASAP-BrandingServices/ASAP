@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>ASAP Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="social-links">
+            <a href="https://www.instagram.com/asap.brandmanagement/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="contact-info">
+          📞 +1-234-567-8901 | ✉️ yourmail@example.com
+        </div>
+      </div>
+
+<!-- Logo Section in a separate black box -->
+<div class="logo-bar">
+    <nav>
+      <a href="index.html"><img src="images/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">SERVICES</a></li>
+          <li><a href="">PORTFOLIO</a></li>
+          <li><a href="">BLOG</a></li>
+          <li><a href="" class="hero-btn">INQUIRE NOW</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+  </div>
+
+  <!-- Background image starts here -->
+  <section class="header">
+    <div class="text-box">
+      <h1>Ready to launch?<br>Let’s bring your brand to life—ASAP!</h1>
+      <p>From bold ideas to killer content—we build, design, write, film, and launch it all. <br>Fast. Creative. Powerful.</p>
+    </div>
+  </section>
+
+<!----- Service ------->
+
+<section class="service">
+    <h1>Services We Offer</h1>
+    <p>statementttttttttttttttttttttttttttttttttttttttttttttttttttt</p>
+
+    <div class="row">
+        <div class="service-col">
+            <h3>Digital and Web Services</h3>
+            <ul>
+                <li>Custom Website Development</li>
+                <li>Mobile Application Development</li>
+                <li>Search Engine Optimization (SEO)</li>
+                <li>Social Media Management (SMM)</li>
+            </ul>
+        </div>
+        <div class="service-col">
+            <h3>Creative & Design Services</h3>
+            <ul>
+                <li>Brand Identity Development</li>
+                <li>Visual Graphic Design</li>
+                <li>Product Packaging Design</li>
+                <li>Animated & Motion Graphics</li>
+                <li>Stop Motion & Experimental Video</li>
+                <li>Interactive Content Design (quizzes, 
+                games, etc.)</li>
+                <li>User Interface & Experience Design (UI/UX)</li>
+            </ul>
+        </div>
+        <div class="service-col">
+            <h3>Content Creation & Storytelling</h3>
+            <ul>
+                <li>Content Creation & Scriptwriting</li>
+                <li>Brand Storytelling</li>
+                <li>AI-Powered Content Generation</li>
+            </ul>
+        </div>
+        <div class="service-col">
+            <h3>Marketing & Strategy</h3>
+            <ul>
+                <li>Marketing & Brand Strategy</li>
+                <li>Creative Advertising Solutions</li>
+                <li>Creative Campaign Execution</li>
+                <li>Influencer Marketing Campaigns</li>
+            </ul>
+        </div>
+        <div class="service-col">
+            <h3>Video & Audio Production</h3>
+            <ul>
+                <li>Professional Video Editing</li>
+                <li>On-site & Studio Filming</li>
+                <li>Podcast Production</li>
+                <li>Voice Assistant Content</li>
+              </ul>
+        </div>
+    </div>
+</section>
+
+<!------Portfolio------>
+
+<section class="portfolio">
+    <h1>ASAP Portfolio</h1>
+    <p>statementttttttttttttttttttttttttttttttttttttttttttttttttttt</p>
+    <div class="row">
+        <div class="portfolio-col">
+            <img src="images/branding.jpeg">
+            <div class="layer">
+                <h3>Branding</h3>
+            </div>
+        </div>
+        <div class="portfolio-col">
+            <img src="images/website dev.jpg">
+            <div class="layer">
+                <h3>Website Development</h3>
+            </div>
+        </div>
+        <div class="portfolio-col">
+            <img src="images/motion graphics.jpg">
+            <div class="layer">
+                <h3>Motion Graphics <br>& Animation</h3>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!--------JavaScript for Toggle Menu------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
