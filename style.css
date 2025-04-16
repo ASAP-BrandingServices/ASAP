@@ -5,6 +5,7 @@
 }
 body {
     background-color: #000000;
+    overflow-x: hidden;
 }
 .top-bar {
     display: flex;
@@ -114,6 +115,10 @@ nav img{
 }
 nav .fa{
     display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
 }
 @media(max-width: 700px){
     .text-box h1{
