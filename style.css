@@ -120,36 +120,65 @@ nav .fa{
     right: 20px;
     z-index: 10;
 }
-@media(max-width: 700px){
-    .text-box h1{
-        font-size: 20px;
-    }
-    .nav-links ul li{
-        display: block;
-    }
-    .nav-links{
-        position: absolute;
-        background: #FD6F01;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
-    }
-    nav .fa{
-        display: block;
-        color: #fff;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-    .nav-links ul{
-        padding: 30px;
-    }
-}
+@media (max-width: 700px) {
+  .logo-bar nav {
+    padding: 10px 15px;
+    flex-wrap: wrap;
+  }
 
+  .nav-links {
+    position: fixed;
+    background: #FD6F01;
+    top: 0;
+    right: -100%;
+    width: 200px;
+    height: 100%;
+    text-align: left;
+    z-index: 999;
+    transition: right 0.5s ease;
+    padding-top: 60px;
+  }
+
+  .nav-links ul {
+    list-style: none;
+    padding: 0 20px;
+  }
+
+  .nav-links ul li {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .nav-links ul li a {
+    font-size: 16px;
+    color: #fff;
+  }
+
+  nav .fa-bars, nav .fa-times {
+    display: block;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+
+  nav .fa-times {
+    top: 20px;
+    right: 20px;
+    position: absolute;
+  }
+
+  .text-box h1 {
+    font-size: 24px;
+  }
+
+  .text-box p {
+    font-size: 13px;
+  }
+}
 /*----- Service ------*/
 
 .service{
@@ -342,64 +371,3 @@ form button.hero-btn:hover {
   color: #FD6F01;
 }
 
-/*---changes----*/
-
-@media (max-width: 700px) {
-  .logo-bar nav {
-    padding: 10px 15px;
-    flex-wrap: wrap;
-  }
-
-  .nav-links {
-    position: fixed;
-    background: #FD6F01;
-    top: 0;
-    right: -100%;
-    width: 200px;
-    height: 100%;
-    text-align: left;
-    z-index: 999;
-    transition: right 0.5s ease;
-    padding-top: 60px;
-  }
-
-  .nav-links ul {
-    list-style: none;
-    padding: 0 20px;
-  }
-
-  .nav-links ul li {
-    padding: 15px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-  }
-
-  .nav-links ul li a {
-    font-size: 16px;
-    color: #fff;
-  }
-
-  nav .fa-bars, nav .fa-times {
-    display: block;
-    color: white;
-    font-size: 26px;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-  }
-
-  nav .fa-times {
-    top: 20px;
-    right: 20px;
-    position: absolute;
-  }
-
-  .text-box h1 {
-    font-size: 24px;
-  }
-
-  .text-box p {
-    font-size: 13px;
-  }
-}
