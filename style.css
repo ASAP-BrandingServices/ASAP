@@ -40,8 +40,8 @@ body {
     width: 100%;
     background-image: url(banner.jpg);
     background-position: center;
-    background-size: auto;
-    position: absolute;
+    background-size: below top-bar;
+    position: relative;
 }
 nav{
     display: flex;
