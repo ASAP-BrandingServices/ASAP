@@ -40,7 +40,7 @@ body {
     width: 100%;
     background-image: url(banner.jpg);
     background-position: center;
-    background-size: below top-bar;
+    background-size: cover;
     position: relative;
 }
 nav{
@@ -162,7 +162,7 @@ h1{
     font-size: 36px;
     font-weight: 600;
 }
-p{
+.service p{
     color: #000000;
     font-size: 14px;
     font-weight: 300;
@@ -334,4 +334,10 @@ form textarea {
 form button.hero-btn {
   margin-top: 10px;
   width: 100%;
+  background: #FD6F01;
+  color: white;
+}
+form button.hero-btn:hover {
+  background: #fff;
+  color: #FD6F01;
 }
